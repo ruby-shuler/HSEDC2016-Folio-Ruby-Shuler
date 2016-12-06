@@ -1,0 +1,63 @@
+body.landing.bg {
+  background-image: url(../images/Mockups/1440.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.landingWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  width: 1440px;
+  margin: 0 auto;
+  /*box-shadow: */
+}
+
+.mainSection {
+  width: 1440px;
+  position: relative;
+  height: 800px;
+  overflow: hidden;
+}
+
+.mainSection section {
+  position: absolute;
+  /*width: */
+  top: 191px;
+}
+
+.mainSection.left section {
+  left: 160px;
+}
+.mainSection.right section {
+  right: 226px;
+}
+
+.mainSection.center section {
+  width: 100%;
+}
+
+.mainSection.center {
+  text-align: center;
+}
+
+.mainSection.right,
+.mainSection.center {
+  /*background-color: */
+}
+
+h2 {
+  font-family: 'PT Sans Caption', sans-serif;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 56px;
+}
+
+p {
+  font-family: 'PT Sans', sans-serif;
+  margin-top: 26px;
+  font-size: 21px;
+  line-height: 36px;
+}
