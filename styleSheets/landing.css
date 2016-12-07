@@ -12,7 +12,6 @@ body.landing.bg {
 
   width: 1440px;
   margin: 0 auto;
-  /*box-shadow: */
 }
 
 .mainSection {
@@ -24,23 +23,39 @@ body.landing.bg {
 
 .mainSection section {
   position: absolute;
-  /*width: */
+  width: 600px;
   top: 191px;
+}
+
+.mainSection section figure {
+  margin: 100px 0 0 -60px;
+  width: 210px;
+  height: 20px;
+  background-image: url(../images/posts/);
 }
 
 .mainSection.left section {
   left: 160px;
 }
 .mainSection.right section {
-  right: 226px;
+  right: 40px;
 }
 
 .mainSection.center section {
   width: 100%;
+  text-align: center;
 }
 
-.mainSection.center {
-  text-align: center;
+.mainSection.center footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  padding-bottom: 35px;
+}
+
+.mainSection.center footer p {
+  font-size: 16px;
 }
 
 .mainSection.right,
@@ -60,4 +75,56 @@ p {
   margin-top: 26px;
   font-size: 21px;
   line-height: 36px;
+}
+
+.mockup {
+  position: absolute;
+  background-size: cover;
+}
+
+#mockup1 {
+  position: relative;
+  width: 532px;
+  height: 576px;
+  top: 233px;
+  right: -749px;
+  box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.1);
+  background-image: url(../images/Posts/about.png);
+}
+
+#mockup2 {
+  width: 140px;
+  height: 317px;
+  top: 193px;
+  left: 160px;
+  /*box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);*/
+  background-image: url(../images/Posts/about.png);
+}
+
+#mockup2a {
+  width: 140px;
+  height: 395px;
+  top: 193px;
+  left: 333px;
+  /*box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);*/
+  background-image: url(../images/Posts/works.png);
+}
+
+#mockup2b {
+  width: 140px;
+  height: 474px;
+  top: 193px;
+  left: 506px;
+  /*box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);*/
+  background-image: url(../images/Posts/work.png);
+}
+
+#mockup3 {
+  position: relative;
+  width: 761px;
+  height: 404px;
+  top: 343px;
+  right: -640px;
+  /*box-shadow: 0 2px 10px 0 rgba(0,0,0,.2);*/
+  background-image: url(../images/Posts/screens.png);
 }

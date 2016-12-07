@@ -8,11 +8,16 @@
     <!-- Folio — своё портфолио своими руками -->
 
     <link rel="stylesheet" href="styleSheets/style.css">
+
+    <script src="javascripts/social-likes.min.js"></script>
+    <script src="javascripts/jquery-3.1.1.js"></script>
   </head>
+
   <body class="landing bg">
+
     <nav class="menubar">
       <div>
-        <a href="http://folio.hack.exchange"></a>
+        <a class="logo" href="http://folio.hack.exchange"></a>
       </div>
     </nav>
 
@@ -29,7 +34,7 @@
           <figure></figure>
         </section>
 
-        <figure class="mockup"></figure>
+        <figure class="mockup" id="mockup1"></figure>
       </section>
 
 
@@ -44,7 +49,9 @@
           <figure></figure>
         </section>
 
-        <figure class="mockup"></figure>
+        <figure class="mockup" id="mockup2"></figure>
+        <figure class="mockup" id="mockup2a"></figure>
+        <figure class="mockup" id="mockup2b"></figure>
       </section>
 
 
@@ -59,7 +66,7 @@
           <figure></figure>
         </section>
 
-        <figure class="mockup"></figure>
+        <figure class="mockup" id="mockup3"></figure>
       </section>
 
 
@@ -68,11 +75,26 @@
           <h2>Возможность самостоятельного
             <br> и курируемого обучения.</h2>
           <p>Вы можете обучаться самостоятельно по исходному коду проекта,
-            <br>выложенному на GitHub, или записаться на курс
-            <br>“Основы веб-вёрстки с Захаром Днём” на Hack Exchange.</p>
+            <br>выложенному на GitHub, или записаться на курс “Основы
+            <br>веб-вёрстки с Захаром Днём” на Hack Exchange.</p>
 
           <figure></figure>
+
+          <nav>
+            <a class="btn" href="http://lessons.hack.exchange">Курс на Hack Exchange</a>
+            <a class="notbtn" href="https://github.com.ZakharDay">Исходный код на Git Hub</a>
+          </nav>
         </section>
+
+        <footer>
+            <p> Пожалуйста, поделитесь знаниями с друзьями</p>
+
+            <div class="social-likes social-likes_single" data-single-title="Поделиться">
+              <div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
+              <div class="twitter" title="Поделиться ссылкой в Твиттере">Twitter</div>
+              <div class="vkontakte" title="Поделиться ссылкой во Вконтакте">Вконтакте</div>
+            </div>
+        </footer>
 
         <figure></figure>
       </section>
@@ -80,6 +102,5 @@
   </body>
 </html>
 
-<!-- Курс на Hack Exchange
-Исходный код на GitHub
+<!--
 Пожалуйста, поделитесь знаниями с друзьями -->

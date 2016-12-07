@@ -1,0 +1,23 @@
+.menubar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  background-color:  white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.menubar div {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.logo {
+  display: block;
+  width: 84px;
+  height: 24px;
+  background-image: url(../images/logo.svg);
+}
