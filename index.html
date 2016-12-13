@@ -5,12 +5,21 @@
     <meta name="description" content="Шаблон сайта-портфолио, разработанный командой Hæd Exchange для обучения основам веб-вёрстки в рамках образовательного проекта Hack Exchange."
     <title></title>
 
-    <!-- Folio — своё портфолио своими руками -->
+    <title>Folio — своё портфолио своими руками</title>
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="{page_url}">
+    <meta property="og:title" content="{title}">
+    <meta property="og:description" content="{description}">
+    <meta property="og:image" content="{image_url}">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@SiteTwitter"    >
+    <meta name="twitter:creator" content="@sapegin">
 
     <link rel="stylesheet" href="styleSheets/style.css">
+    <link rel="stylesheet" href="styleSheets/social-likes_birman.css">
 
-    <script src="javascripts/social-likes.min.js"></script>
     <script src="javascripts/jquery-3.1.1.js"></script>
+    <script src="javascripts/social-likes.min.js"></script>
   </head>
 
   <body class="landing bg">
@@ -82,13 +91,12 @@
 
           <nav>
             <a class="btn" href="http://lessons.hack.exchange">Курс на Hack Exchange</a>
-            <a class="notbtn" href="https://github.com.ZakharDay">Исходный код на Git Hub</a>
+            <a class="not" href="https://github.com.ZakharDay">Исходный код на Git Hub</a>
           </nav>
         </section>
 
         <footer>
             <p> Пожалуйста, поделитесь знаниями с друзьями</p>
-
             <div class="social-likes social-likes_single" data-single-title="Поделиться">
               <div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
               <div class="twitter" title="Поделиться ссылкой в Твиттере">Twitter</div>
