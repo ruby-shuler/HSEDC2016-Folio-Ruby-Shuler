@@ -8,15 +8,16 @@ body.landing.bg {
   position: relative;
   display: flex;
   flex-direction: column;
+  /*align-items: center;*/
+  /*margin: auto;*/
   overflow: hidden;
-
-  width: 1440px;
   margin: 0 auto;
+  box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.1);
 }
 
 .mainSection {
-  width: 1440px;
   position: relative;
+  width: 1440px;
   height: 800px;
   overflow: hidden;
 }
@@ -46,6 +47,21 @@ body.landing.bg {
   text-align: center;
 }
 
+.mainSection section figure {
+  margin: 55px 0 0 -60px;
+  width: 30px;
+  height: 4px;
+  background-color: #00ffe5;
+}
+
+.mainSection.left section figure {
+  margin-left: 0;
+}
+
+.mainSection.right section figure {
+  margin-left: 0;
+}
+
 .mainSection.center footer {
   position: absolute;
   margin: auto;
@@ -59,25 +75,6 @@ body.landing.bg {
 .mainSection.center footer p {
   font-size: 16px;
 }
-
-
-
-
-.mainSection section figure {
-  margin: 58px 0 0 -60px;
-  width: 30px;
-  height: 4px;
-  background-color: #00ffe5;
-}
-
-.mainSection.left section figure {
-  margin-left: 0px;
-}
-
-.mainSection.right section figure {
-  margin-right: 100px;
-}
-
 
 h2 {
   font-family: 'PT Sans Caption', sans-serif;
@@ -93,15 +90,6 @@ p {
   line-height: 36px;
 }
 
-/*.mainSection.right,
-.mainSection.center {
-  background-color: #879696;
-}
-
-.mainSection.left {
-  background-color: #fcfffe;
-}*/
-
 /*.mainSection.left p,
 .mainSection.left h2 {
   color: #323332;
@@ -114,6 +102,14 @@ p {
   color: #ffffff;
 }*/
 
+/*.mainSection.right,
+.mainSection.center {
+  background-color: #879696;
+}
+
+.mainSection.left {
+  background-color: #fcfffe;
+}*/
 
 .mockup {
   position: absolute;
@@ -173,13 +169,158 @@ p {
   }
 }
 
-@media screen and (max-width: 1180px) {
-  .landing.bg {
-    background-image: url(../images/Mockups/1180 First Breakpoint.png);
+@media screen and (max-width: 1179px) {
+  body.landing.bg {
+    background-image: url(../images/Mockups/1180.png);
   }
 
   .mainSection {
     width: 1180px;
     height: 568px;
+  }
+
+  .mainSection section {
+    position: absolute;
+    top: 137px;
+  }
+
+  .mainSection.left section {
+    left: 190px;
+  }
+
+  .mainSection.right section {
+    right: -65px;
+  }
+
+  .mainSection section figure {
+    margin: 42px;
+    width: 23px;
+    height: 3px;
+    background-color: #00ffe5;
+}
+
+  .mainSection section h2 {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 39px;
+  }
+
+  .mainSection section p {
+    margin-top: 18px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .mainSection.center footer p {
+    font-size: 13px;
+  }
+
+  .mainSection.center footer {
+    padding-bottom: 20px;
+  }
+
+  #mockup1 {
+    width: 377px;
+    height: 576px;
+    top: 167px;
+    right: -610px;
+  }
+
+  #mockup2 {
+    width: 100px;
+    height: 226px;
+    top: 138px;
+    left: 191px;
+  }
+
+  #mockup2a {
+    width: 100px;
+    height: 282px;
+    top: 138px;
+    left: 315px;
+  }
+
+  #mockup2b {
+    width: 100px;
+    height: 339px;
+    top: 138px;
+    left: 437px;
+  }
+
+  #mockup3 {
+    width: 541px;
+    height: 287px;
+    top: 243px;
+    right: -533px;
+  }
+}
+
+@media screen and (max-width: 839px) {
+  body.landing.bg {
+    background-image: url(../images/Mockups/840.png);
+  }
+
+  .mainSection {
+    width: 1180px;
+    height: 1023px;
+  }
+
+  .mainSection section {
+    top: 138px;
+  }
+
+  .mainSection.left section {
+    left: 148px;
+  }
+
+  .mainSection.right section {
+    right: 234px;
+  }
+
+  .mainSection.center section {
+    width: 100%;
+    text-align: center;
+    top: 190px;
+    right: 168px;
+  }
+
+  .mainSection.center footer {
+    right: 171px;
+    bottom: -4px;
+  }
+
+  #mockup1 {
+    width: 540px;
+    height: 539px;
+    top: 484px;
+    right: -149px;
+  }
+
+  #mockup2 {
+    width: 140px;
+    height: 317px;
+    top: 457px;
+    left: 174px;
+  }
+
+  #mockup2a {
+    width: 140px;
+    height: 396px;
+    top: 457px;
+    left: 347px;
+  }
+
+  #mockup2b {
+    width: 140px;
+    height: 475px;
+    top: 457px;
+    left: 520px;
+  }
+
+  #mockup3 {
+    width: 756px;
+    height: 403px;
+    top: 508px;
+    right: -157px;
   }
 }

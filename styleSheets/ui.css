@@ -1,8 +1,13 @@
-.btn {
+.btn,
+.not {
   display: block;
-  text-align: center;
   margin: auto;
-  margin-top: -62px;
+  margin-top: 58px;
+
+}
+
+.btn {
+  height: 50px;
   width: 300px;
   font-family: 'PT Sans Caption', sans-serif;
   font-weight: bold;
@@ -13,10 +18,38 @@
 }
 
 .not {
-  display: block;
   margin-top: 17px;
   font-family: 'PT Sans Caption', sans-serif;
   font-size: 14px;
   color: white;
   text-decoration: underline;
+}
+
+@media screen and (max-width: 1179px) {
+  .btn {
+    margin-top: 42px;
+    margin-left: 483px;
+    height: 36px;
+    width: 214px;
+    line-height: 36px;
+    font-size: 12px;
+  }
+
+  .not {
+    margin-top: 12px;
+    font-size: 12px;
+  }
+
+}
+
+@media screen and (max-width: 839px) {
+  .btn {
+    margin-top: 92px;
+    margin-left: 479px;
+  }
+  .not {
+    margin-top: 12px;
+    margin-left: 7px;
+    font-size: 12px;
+  }
 }
