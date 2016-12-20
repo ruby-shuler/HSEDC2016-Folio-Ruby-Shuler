@@ -94,7 +94,7 @@ p {
   line-height: 36px;
 }
 
-/*.mainSection.left p,
+.mainSection.left p,
 .mainSection.left h2 {
   color: #323332;
 }
@@ -104,16 +104,16 @@ p {
 .mainSection.center h2,
 .mainSection.center p {
   color: #ffffff;
-}*/
+}
 
-/*.mainSection.right,
+.mainSection.right,
 .mainSection.center {
   background-color: #879696;
 }
 
 .mainSection.left {
   background-color: #fcfffe;
-}*/
+}
 
 .mockup {
   position: absolute;
