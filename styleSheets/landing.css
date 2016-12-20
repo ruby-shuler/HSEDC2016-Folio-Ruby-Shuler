@@ -4,12 +4,16 @@ body.landing.bg {
   background-position: top center;
 }
 
+.compact {
+  display: none;
+}
+
+
 .landingWrapper {
   position: relative;
   display: flex;
   flex-direction: column;
-  /*align-items: center;*/
-  /*margin: auto;*/
+  align-items: center;
   overflow: hidden;
   margin: 0 auto;
   box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.1);
@@ -65,15 +69,15 @@ body.landing.bg {
 .mainSection.center footer {
   position: absolute;
   margin: auto;
-  bottom: 0;
+  bottom: 30px;
   width: 100%;
   min-width: 768px;
   text-align: center;
-  padding-bottom: 37px;
 }
 
 .mainSection.center footer p {
   font-size: 16px;
+  padding-bottom: 7px;
 }
 
 h2 {
@@ -169,9 +173,17 @@ p {
   }
 }
 
-@media screen and (max-width: 1179px) {
+@media screen and (max-width: 1180px) {
   body.landing.bg {
     background-image: url(../images/Mockups/1180.png);
+  }
+
+  .full {
+    display: none;
+  }
+
+  .compact {
+    display: block;
   }
 
   .mainSection {
@@ -185,7 +197,7 @@ p {
   }
 
   .mainSection.left section {
-    left: 190px;
+    left: 192px;
   }
 
   .mainSection.right section {
@@ -213,10 +225,11 @@ p {
 
   .mainSection.center footer p {
     font-size: 13px;
+    padding-bottom: 0px;
   }
 
   .mainSection.center footer {
-    padding-bottom: 20px;
+    margin-bottom: -10px;
   }
 
   #mockup1 {
@@ -255,38 +268,43 @@ p {
   }
 }
 
-@media screen and (max-width: 839px) {
+@media screen and (max-width: 840px) {
   body.landing.bg {
     background-image: url(../images/Mockups/840.png);
   }
 
+  .full {
+    display: none;
+  }
+
+  .compact {
+    display: block;
+  }
+
   .mainSection {
-    width: 1180px;
-    height: 1023px;
+    width: 840px;
+    height: 1024px;
   }
 
   .mainSection section {
-    top: 138px;
+    position: absolute;
   }
 
   .mainSection.left section {
-    left: 148px;
+    left: 150px;
   }
 
   .mainSection.right section {
-    right: 234px;
+    right: -108px;
   }
 
   .mainSection.center section {
-    width: 100%;
-    text-align: center;
-    top: 190px;
-    right: 168px;
+    top: 188px;
   }
 
   .mainSection.center footer {
-    right: 171px;
-    bottom: -4px;
+    right: 0px;
+    bottom: 30px;
   }
 
   #mockup1 {
@@ -323,4 +341,12 @@ p {
     top: 508px;
     right: -157px;
   }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  #mockup1 {background-image: url(../images/about@2x.jpg);}
+  #mockup2 {background-image: url(../images/about@2x.jpg);}
+  #mockup2a {background-image: url(../images/works@2x.jpg);}
+  #mockup2b {background-image: url(../images/work@2x.jpg);}
+  #mockup3 {background-image: url(../images/screens@2x.jpg);}
 }

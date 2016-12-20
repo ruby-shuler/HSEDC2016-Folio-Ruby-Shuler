@@ -1,29 +1,29 @@
 .menubar {
   width: 100%;
+  position: fixed;
+  z-index: 1;
 }
 
 .menubar div {
-  z-index: 1;
-  overflow: hidden;
-  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  margin: auto;
+  max-width: 1440px;
   height: 60px;
   background-color:  white;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 }
-
 
 .logo {
   display: block;
   width: 84px;
   height: 24px;
   background-image: url(../images/logo.svg);
+  background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 1179px){
+@media screen and (max-width: 1180px){
   .logo {
     width: 58px;
     height: 17px;
@@ -32,5 +32,4 @@
   .menubar div {
     height: 42px;
   }
-
 }

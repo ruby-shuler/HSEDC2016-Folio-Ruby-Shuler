@@ -25,10 +25,9 @@
   text-decoration: underline;
 }
 
-@media screen and (max-width: 1179px) {
+@media screen and (max-width: 1180px) {
   .btn {
     margin-top: 42px;
-    margin-left: 483px;
     height: 36px;
     width: 214px;
     line-height: 36px;
@@ -42,14 +41,8 @@
 
 }
 
-@media screen and (max-width: 839px) {
+@media screen and (max-width: 840px) {
   .btn {
-    margin-top: 92px;
-    margin-left: 479px;
-  }
-  .not {
-    margin-top: 12px;
-    margin-left: 7px;
-    font-size: 12px;
+    margin-top: 91px;
   }
 }
