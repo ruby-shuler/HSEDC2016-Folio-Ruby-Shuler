@@ -1,4 +1,5 @@
 body.landing * {
+  -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
